@@ -21,7 +21,8 @@
     "conventional-recommended-bump.js",
     "index.js",
     "parser-opts.js",
-    "writer-opts.js"
+    "writer-opts.js",
+    "templates"
   ],
   "author": "Kim J. Nordmo",
   "engines": {
