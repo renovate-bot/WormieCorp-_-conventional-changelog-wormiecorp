@@ -1,0 +1,60 @@
+{
+  "name": "conventional-changelog-wormiecorp",
+  "version": "0.0.0-development",
+  "description": "conventional-changelog preset to be used in the wormiecorp organization",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git-cz",
+    "prepare": "tsc --build tsconfig.json",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WormieCorp/conventional-changelog-wormiecorp"
+  },
+  "keywords": [
+    "conventional-changelog",
+    "preset"
+  ],
+  "files": [
+    "conventional-changelog.js",
+    "conventional-recommended-bump.js",
+    "index.js",
+    "parser-opts.js",
+    "writer-opts.js"
+  ],
+  "author": "Kim J. Nordmo",
+  "engines": {
+    "node": ">=8"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WormieCorp/conventional-changelog-wormiecorp/issues"
+  },
+  "homepage": "https://github.com/WormieCorp/conventional-changelog-wormiecorp#readme",
+  "dependencies": {
+    "compare-func": "^1.3.2",
+    "q": "^1.5.1"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^3.0.2",
+    "@semantic-release/commit-analyzer": "^6.1.0",
+    "@semantic-release/exec": "^3.3.2",
+    "@semantic-release/git": "^7.0.8",
+    "@semantic-release/github": "^5.2.10",
+    "@semantic-release/npm": "^5.1.7",
+    "@semantic-release/release-notes-generator": "^7.1.4",
+    "@types/compare-func": "^1.3.0",
+    "@types/node": "^12.0.5",
+    "@types/q": "^1.5.2",
+    "commitizen": "^3.1.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "semantic-release": "^15.13.12",
+    "typescript": "^3.5.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
