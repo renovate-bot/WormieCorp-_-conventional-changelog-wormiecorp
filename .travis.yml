@@ -1,0 +1,17 @@
+language: node_js
+
+node_js:
+  - node
+  - 10
+
+jobs:
+  include:
+    - stage: release
+      node_js: 10
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - yarn semantic-release
+
+cache: yarn
