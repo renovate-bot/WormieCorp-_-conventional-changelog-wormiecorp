@@ -40,7 +40,6 @@
   "devDependencies": {
     "@semantic-release/changelog": "^3.0.2",
     "@semantic-release/commit-analyzer": "^6.1.0",
-    "@semantic-release/exec": "^3.3.2",
     "@semantic-release/git": "^7.0.8",
     "@semantic-release/github": "^5.2.10",
     "@semantic-release/npm": "^5.1.7",
@@ -57,5 +56,48 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "release": {
+    "plugins": [
+      [
+        "@semantic-release/commit-analyzer",
+        {
+          "preset": null,
+          "config": "./"
+        }
+      ],
+      [
+        "@semantic-release/release-notes-generator",
+        {
+          "preset": null,
+          "config": "./",
+          "parserOpts": {
+            "generators": [ "license" ]
+          }
+        }
+      ],
+      "@semantic-release/changelog",
+      [
+        "@semantic-release/npm",
+        {
+          "tarballDir": "dist"
+        }
+      ],
+      "@semantic-release/git",
+      [
+        "@semantic-release/github",
+        {
+          "assets": [
+            {
+              "path": "dist/*.tgz",
+              "labes": "NPM Package"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "publishConfig": {
+    "tag": "latest"
   }
 }
