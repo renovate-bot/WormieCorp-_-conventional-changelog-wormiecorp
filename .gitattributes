@@ -1,3 +1,4 @@
 * text eol=lf
 
 *.md text whitespace=-blank-at-eol
+*.hbs text whitespace=-blank-at-eol
