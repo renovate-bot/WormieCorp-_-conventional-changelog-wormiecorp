@@ -1,7 +1,17 @@
 import compareFunc from "compare-func";
+import { existsSync, readFileSync } from "fs";
+import { resolve, join } from "path";
+import { cwd } from "process";
 import { all, denodeify } from "q";
 const readFile = denodeify(require("fs").readFile);
-import { resolve } from "path";
+
+interface IScope {
+  [key: string]: string
+}
+
+interface IConfiguration {
+  scopes: Array<IScope>
+}
 
 export interface IWriterOptions {
   commitGroupsSort: string;
@@ -13,14 +23,14 @@ export interface IWriterOptions {
   mainTemplate?: string;
   noteGroupsSort: string;
   notesSort: Function;
-  transform: (commit: any, context: any) => void | any;
+  transform: Function
 }
 
 export const writerOpts = all([
-  readFile(resolve(__dirname, "template", "template.hbs"), "utf-8"),
-  readFile(resolve(__dirname, "template", "header.hbs"), "utf-8"),
-  readFile(resolve(__dirname, "template", "commit.hbs"), "utf-8"),
-  readFile(resolve(__dirname, "template", "footer.hbs"), "utf-8")
+  readFile(resolve(__dirname, "templates", "template.hbs"), "utf-8"),
+  readFile(resolve(__dirname, "templates", "header.hbs"), "utf-8"),
+  readFile(resolve(__dirname, "templates", "commit.hbs"), "utf-8"),
+  readFile(resolve(__dirname, "templates", "footer.hbs"), "utf-8")
 ]).spread((template, header, commit, footer) => {
   const writerOpts = getWriterOpts();
 
@@ -70,6 +80,23 @@ function getWriterOpts(): IWriterOptions {
 
       if (commit.scope === "*") {
         commit.scope = "";
+      }
+
+      let configPath = join(cwd(), ".conventional-changelog");
+
+      if (existsSync(configPath)) {
+        const config = JSON.parse(readFileSync(configPath, {encoding: "utf-8"})) as IConfiguration;
+        if (config.scopes) {
+          for (const key in config.scopes) {
+            if (!config.scopes.hasOwnProperty(key)) {
+              continue;
+            }
+
+            if (key === commit.scope) {
+              commit.scope = config.scopes[key]
+            }
+          }
+        }
       }
 
       if (typeof commit.hash === "string") {
