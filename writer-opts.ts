@@ -124,7 +124,7 @@ function getWriterOpts(): IWriterOptions {
                 return `@${username}`;
               }
 
-              return `[@${username}](${context.host}/${username})`;
+              return `[@${username}](${context.host}/${username}))`;
             }
           );
         }
