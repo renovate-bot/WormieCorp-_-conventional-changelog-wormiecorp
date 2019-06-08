@@ -81,7 +81,7 @@
       [
         "@semantic-release/changelog",
         {
-          "changelogTitle": "conventional-changelog-wormiecorp Changelog"
+          "changelogTitle": "# conventional-changelog-wormiecorp Changelog"
         }
       ],
       [
