@@ -78,7 +78,7 @@ function getWriterOpts(): IWriterOptions {
         commit.type = "Continuous Integration";
       }
 
-      if (commit.scope === "*") {
+      if (!commit.scope || commit.scope === "*") {
         commit.scope = "";
       }
 
