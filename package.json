@@ -78,7 +78,12 @@
           }
         }
       ],
-      "@semantic-release/changelog",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogTitle": "conventional-changelog-wormiecorp Changelog"
+        }
+      ],
       [
         "@semantic-release/npm",
         {
