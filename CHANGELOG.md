@@ -1,3 +1,17 @@
+conventional-changelog-wormiecorp Changelog
+
+## [1.0.1](https://github.com/WormieCorp/conventional-changelog-wormiecorp/compare/v1.0.0...v1.0.1) (2019-06-08)
+
+
+### Bug fixes
+
+* **ordering:** change not defined scopes to be an empty string ([952bac4](https://github.com/WormieCorp/conventional-changelog-wormiecorp/commit/952bac4))
+
+
+### Documentation
+
+* **CHANGELOG:** change changelog title to use project name for title ([e5f4e62](https://github.com/WormieCorp/conventional-changelog-wormiecorp/commit/e5f4e62))
+
 # 1.0.0 (2019-06-07)
 
 
