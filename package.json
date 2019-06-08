@@ -1,6 +1,6 @@
 {
   "name": "conventional-changelog-wormiecorp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "conventional-changelog preset to be used in the wormiecorp organization",
   "main": "index.js",
   "scripts": {

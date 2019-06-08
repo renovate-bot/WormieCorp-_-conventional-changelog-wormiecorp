@@ -1,5 +1,18 @@
 # conventional-changelog-wormiecorp Changelog
 
+## [1.0.2](https://github.com/WormieCorp/conventional-changelog-wormiecorp/compare/v1.0.1...v1.0.2) (2019-06-08)
+
+
+### Bug fixes
+
+* fix referenced pull requests missing ending parenthesis ([3561288](https://github.com/WormieCorp/conventional-changelog-wormiecorp/commit/3561288))
+* very important ([c6cd3a4](https://github.com/WormieCorp/conventional-changelog-wormiecorp/commit/c6cd3a4))
+
+
+### Documentation
+
+* **CHANGELOG:** change title to be a header ([a0beeac](https://github.com/WormieCorp/conventional-changelog-wormiecorp/commit/a0beeac))
+
 ## [1.0.1](https://github.com/WormieCorp/conventional-changelog-wormiecorp/compare/v1.0.0...v1.0.1) (2019-06-08)
 
 
