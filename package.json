@@ -50,7 +50,7 @@
     "commitizen": "^3.1.1",
     "cz-conventional-changelog": "^2.1.0",
     "semantic-release": "^15.13.18",
-    "typescript": "^3.5.2"
+    "typescript": "^3.5.3"
   },
   "config": {
     "commitizen": {
