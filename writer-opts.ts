@@ -64,6 +64,7 @@ function getWriterOpts(): IWriterOptions {
         commit.type = "Documentation";
       } else if (commit.type === "chore" && commit.scope === "deps") {
         commit.type = "Dependencies";
+        commit.scope = "";
       } else if (discard) {
         return;
       } else if (commit.type === "style") {
