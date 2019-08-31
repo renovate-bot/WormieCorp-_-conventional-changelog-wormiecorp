@@ -63,7 +63,10 @@
         "@semantic-release/commit-analyzer",
         {
           "preset": null,
-          "config": "./"
+          "config": "./",
+          "releaseRules": [
+            { "type": "chore", "scope": "deps", "release": "patch" }
+          ]
         }
       ],
       [
