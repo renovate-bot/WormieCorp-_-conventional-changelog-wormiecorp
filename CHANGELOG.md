@@ -1,5 +1,17 @@
 # conventional-changelog-wormiecorp Changelog
 
+## [1.0.3](https://github.com/WormieCorp/conventional-changelog-wormiecorp/compare/v1.0.2...v1.0.3) (2019-09-01)
+
+
+### Bug fixes
+
+* set scope to empty when scope is set to deps and type to chore ([383d8a8](https://github.com/WormieCorp/conventional-changelog-wormiecorp/commit/383d8a8))
+
+
+### Dependencies
+
+* [security] bump mixin-deep from 1.3.1 to 1.3.2 ([#45](https://github.com/WormieCorp/conventional-changelog-wormiecorp/issues//45)) ([1eea93b](https://github.com/WormieCorp/conventional-changelog-wormiecorp/commit/1eea93b))
+
 ## [1.0.2](https://github.com/WormieCorp/conventional-changelog-wormiecorp/compare/v1.0.1...v1.0.2) (2019-06-08)
 
 

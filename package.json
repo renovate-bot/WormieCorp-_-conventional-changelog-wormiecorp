@@ -1,6 +1,6 @@
 {
   "name": "conventional-changelog-wormiecorp",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "conventional-changelog preset to be used in the wormiecorp organization",
   "main": "index.js",
   "scripts": {
@@ -65,7 +65,11 @@
           "preset": null,
           "config": "./",
           "releaseRules": [
-            { "type": "chore", "scope": "deps", "release": "patch" }
+            {
+              "type": "chore",
+              "scope": "deps",
+              "release": "patch"
+            }
           ]
         }
       ],
