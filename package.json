@@ -100,7 +100,7 @@
           "assets": [
             {
               "path": "dist/*.tgz",
-              "labes": "NPM Package"
+              "label": "NPM Package"
             }
           ]
         }
