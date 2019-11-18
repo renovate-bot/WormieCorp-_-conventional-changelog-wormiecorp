@@ -1,5 +1,12 @@
 # conventional-changelog-wormiecorp Changelog
 
+## [1.0.4](https://github.com/WormieCorp/conventional-changelog-wormiecorp/compare/v1.0.3...v1.0.4) (2019-11-18)
+
+
+### Dependencies
+
+* [security] bump https-proxy-agent from 2.2.2 to 2.2.4 ([2abf19f](https://github.com/WormieCorp/conventional-changelog-wormiecorp/commit/2abf19f))
+
 ## [1.0.3](https://github.com/WormieCorp/conventional-changelog-wormiecorp/compare/v1.0.2...v1.0.3) (2019-09-01)
 
 
