@@ -1,5 +1,12 @@
 # conventional-changelog-wormiecorp Changelog
 
+## [1.0.5](https://github.com/WormieCorp/conventional-changelog-wormiecorp/compare/v1.0.4...v1.0.5) (2019-12-13)
+
+
+### Dependencies
+
+* [security] bump npm from 6.11.2 to 6.13.4 ([b5e40f0](https://github.com/WormieCorp/conventional-changelog-wormiecorp/commit/b5e40f0))
+
 ## [1.0.4](https://github.com/WormieCorp/conventional-changelog-wormiecorp/compare/v1.0.3...v1.0.4) (2019-11-18)
 
 
