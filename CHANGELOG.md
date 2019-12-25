@@ -1,5 +1,12 @@
 # conventional-changelog-wormiecorp Changelog
 
+# [1.1.0](https://github.com/WormieCorp/conventional-changelog-wormiecorp/compare/v1.0.5...v1.1.0) (2019-12-25)
+
+
+### Features
+
+* add 'improvement' as a valid commit type ([0394b69](https://github.com/WormieCorp/conventional-changelog-wormiecorp/commit/0394b69))
+
 ## [1.0.5](https://github.com/WormieCorp/conventional-changelog-wormiecorp/compare/v1.0.4...v1.0.5) (2019-12-13)
 
 
