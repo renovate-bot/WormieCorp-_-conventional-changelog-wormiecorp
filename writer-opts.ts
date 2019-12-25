@@ -54,6 +54,8 @@ function getWriterOpts(): IWriterOptions {
 
       if (commit.type === "feat") {
         commit.type = "Features";
+      } else if (commit.type === "improvement") {
+        commit.type = "Improvements";
       } else if (commit.type === "fix") {
         commit.type = "Bug fixes";
       } else if (commit.type === "perf") {

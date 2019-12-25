@@ -12,7 +12,7 @@ export const recommendedBumpOpts = {
       if (commit.notes.length > 0) {
         breakings += commit.notes.length;
         level = 0;
-      } else if (commit.type === "feat") {
+      } else if (commit.type === "feat" || commit.type === "improvement") {
         features++;
         if (level === 2) {
           level = 1;
