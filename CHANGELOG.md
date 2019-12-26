@@ -1,5 +1,12 @@
 # conventional-changelog-wormiecorp Changelog
 
+## [1.1.1](https://github.com/WormieCorp/conventional-changelog-wormiecorp/compare/v1.1.0...v1.1.1) (2019-12-26)
+
+
+### Dependencies
+
+* [security] bump handlebars from 4.1.2 to 4.5.3 ([bc86d11](https://github.com/WormieCorp/conventional-changelog-wormiecorp/commit/bc86d11))
+
 # [1.1.0](https://github.com/WormieCorp/conventional-changelog-wormiecorp/compare/v1.0.5...v1.1.0) (2019-12-25)
 
 
