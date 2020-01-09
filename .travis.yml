@@ -1,23 +1,26 @@
+dist: trusty
 language: node_js
-
 node_js:
-  - node
-  - 10
-
+- node
+- 10
+addons:
+  sonarcloud:
+    organization: "wormiecorp"
+    token:
+      secure: CPozvrashU8QXDDd4VgyU0VpDNj5mp1jJxYrtGoymi2nMOrYdKAhJXeyFp3IlO1AdXcFPPAoYQDf7VeyaXZ2YUD9TXOuC70CEUZd2ZiBMtq62zAg9QAkiGCN5sKp6qMQkwBnxgvXrRLVOsZyjB/yOcLZrAK8D/jis4bC9eIYDjlfgfNT7vNHvv3RrhcnzpqlCYwaPrdncS3obNp3Ka5A7KX24fczbzrFiVvjubkWWSKOfcMmqL6t2Lyh2MfIgcAOeP1RfBnpkA47xN5ASQM4TAhdnvsiGd8sJp5vTiFV9WfPF2VxxULhm3VUS7XmWW+On2OhxpdkohB0J27hbUB0g9CXSP1C03rhJlr4UUFfZxzxGLk3EqjfaTzsZJWkGVgh8jYsl3KfvqoqgXzmwNWap7kWgUish52+wvZZt+NUefY7yP8cvVddPkEPdAe9pTppNN8P8iwOvAL6E/48YPqWVNsl1FtfEl3DBvR4FkL2gVzK05Jb0Y6rJcPFm8qp3unMqAnlZhtytxK/RYuJqKuzaZdOPcMBZ+I6u/NfuwbXPNO0HbwzIaP+sYyXEjFhBTUC5sA7cc/ZmxbDl77V6xKYDtrK5/70Y6RUScQnG1xE/WZGAc/HM1gfMziyFYoX3FMnC/V0pbk8h8V2CfWrz+0LS2dHGacjMBzC7I1r+lNx3tk=
 before_install:
-  - curl -o- -L https://yarnpkg.com/install.sh | bash -s --
-  - export PATH="$HOME/.yarn/bin:$PATH"
-
-script: yarn install
-
+- curl -o- -L https://yarnpkg.com/install.sh | bash -s --
+- export PATH="$HOME/.yarn/bin:$PATH"
+script:
+- yarn install
+- sonar-scanner
 jobs:
   include:
-    - stage: release
-      node_js: 10
-      deploy:
-        provider: script
-        skip_cleanup: true
-        script:
-          - yarn semantic-release
-
+  - stage: release
+    node_js: 10
+    deploy:
+      provider: script
+      skip_cleanup: true
+      script:
+      - yarn semantic-release
 cache: yarn
