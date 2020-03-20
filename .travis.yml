@@ -13,7 +13,7 @@ before_install:
 - export PATH="$HOME/.yarn/bin:$PATH"
 script:
 - yarn install
-- if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then sonar-scanner; fi
+- 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then sonar-scanner; fi'
 jobs:
   include:
   - stage: release
