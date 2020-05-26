@@ -6,11 +6,11 @@ import { all, denodeify } from "q";
 const readFile = denodeify(require("fs").readFile);
 
 interface IScope {
-  [key: string]: string
+  [key: string]: string;
 }
 
 interface IConfiguration {
-  scopes: Array<IScope>
+  scopes: Array<IScope>;
 }
 
 export interface IWriterOptions {
@@ -23,14 +23,14 @@ export interface IWriterOptions {
   mainTemplate?: string;
   noteGroupsSort: string;
   notesSort: Function;
-  transform: Function
+  transform: Function;
 }
 
 export const writerOpts = all([
   readFile(resolve(__dirname, "templates", "template.hbs"), "utf-8"),
   readFile(resolve(__dirname, "templates", "header.hbs"), "utf-8"),
   readFile(resolve(__dirname, "templates", "commit.hbs"), "utf-8"),
-  readFile(resolve(__dirname, "templates", "footer.hbs"), "utf-8")
+  readFile(resolve(__dirname, "templates", "footer.hbs"), "utf-8"),
 ]).spread((template, header, commit, footer) => {
   const writerOpts = getWriterOpts();
 
@@ -47,7 +47,7 @@ function getWriterOpts(): IWriterOptions {
     transform: (commit, context) => {
       let discard = true;
       const issues: string[] = [];
-      commit.notes.forEach(note => {
+      commit.notes.forEach((note) => {
         note.title = "BREAKING CHANGES";
         discard = false;
       });
@@ -77,7 +77,7 @@ function getWriterOpts(): IWriterOptions {
         commit.type = "Tests";
       } else if (commit.type === "build") {
         commit.type = "Build System";
-      } else if ((commit.type = "ci")) {
+      } else if (commit.type === "ci") {
         commit.type = "Continuous Integration";
       }
 
@@ -88,7 +88,9 @@ function getWriterOpts(): IWriterOptions {
       let configPath = join(cwd(), ".conventional-changelog");
 
       if (existsSync(configPath)) {
-        const config = JSON.parse(readFileSync(configPath, {encoding: "utf-8"})) as IConfiguration;
+        const config = JSON.parse(
+          readFileSync(configPath, { encoding: "utf-8" })
+        ) as IConfiguration;
         if (config.scopes) {
           for (const key in config.scopes) {
             if (!config.scopes.hasOwnProperty(key)) {
@@ -96,7 +98,7 @@ function getWriterOpts(): IWriterOptions {
             }
 
             if (key === commit.scope) {
-              commit.scope = config.scopes[key]
+              commit.scope = config.scopes[key];
             }
           }
         }
@@ -134,7 +136,7 @@ function getWriterOpts(): IWriterOptions {
       }
 
       // remove references that already appear in the subject
-      commit.references = commit.references.filter(reference => {
+      commit.references = commit.references.filter((reference) => {
         if (issues.indexOf(reference.issue) === -1) {
           return true;
         }
@@ -148,6 +150,6 @@ function getWriterOpts(): IWriterOptions {
     commitGroupsSort: "title",
     commitsSort: ["scope", "subject"],
     noteGroupsSort: "title",
-    notesSort: compareFunc
+    notesSort: compareFunc,
   };
 }
