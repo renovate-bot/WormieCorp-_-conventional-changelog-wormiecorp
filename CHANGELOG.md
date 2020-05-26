@@ -1,5 +1,17 @@
 # conventional-changelog-wormiecorp Changelog
 
+## [1.1.2](https://github.com/WormieCorp/conventional-changelog-wormiecorp/compare/v1.1.1...v1.1.2) (2020-05-26)
+
+
+### Bug fixes
+
+* correct type check for continuous integration ([31789a6](https://github.com/WormieCorp/conventional-changelog-wormiecorp/commit/31789a6))
+
+
+### Dependencies
+
+* bump compare-func from 1.3.2 to 2.0.0 ([4a97f43](https://github.com/WormieCorp/conventional-changelog-wormiecorp/commit/4a97f43))
+
 ## [1.1.1](https://github.com/WormieCorp/conventional-changelog-wormiecorp/compare/v1.1.0...v1.1.1) (2019-12-26)
 
 
