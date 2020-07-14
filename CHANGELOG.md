@@ -1,5 +1,12 @@
 # conventional-changelog-wormiecorp Changelog
 
+## [1.1.3](https://github.com/WormieCorp/conventional-changelog-wormiecorp/compare/v1.1.2...v1.1.3) (2020-07-14)
+
+
+### Dependencies
+
+* bump npm from 6.14.4 to 6.14.6 ([#207](https://github.com/WormieCorp/conventional-changelog-wormiecorp/issues//207)) ([f8a06b7](https://github.com/WormieCorp/conventional-changelog-wormiecorp/commit/f8a06b7))
+
 ## [1.1.2](https://github.com/WormieCorp/conventional-changelog-wormiecorp/compare/v1.1.1...v1.1.2) (2020-05-26)
 
 
