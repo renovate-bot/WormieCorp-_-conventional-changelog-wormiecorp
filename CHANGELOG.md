@@ -1,5 +1,12 @@
 # conventional-changelog-wormiecorp Changelog
 
+## [1.1.4](https://github.com/WormieCorp/conventional-changelog-wormiecorp/compare/v1.1.3...v1.1.4) (2021-01-05)
+
+
+### Dependencies
+
+* bump ini from 1.3.5 to 1.3.7 ([#271](https://github.com/WormieCorp/conventional-changelog-wormiecorp/issues//271)) ([a926a5a](https://github.com/WormieCorp/conventional-changelog-wormiecorp/commit/a926a5a))
+
 ## [1.1.3](https://github.com/WormieCorp/conventional-changelog-wormiecorp/compare/v1.1.2...v1.1.3) (2020-07-14)
 
 
