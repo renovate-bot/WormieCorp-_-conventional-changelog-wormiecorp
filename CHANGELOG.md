@@ -1,5 +1,12 @@
 # conventional-changelog-wormiecorp Changelog
 
+## [1.1.5](https://github.com/WormieCorp/conventional-changelog-wormiecorp/compare/v1.1.4...v1.1.5) (2021-02-24)
+
+
+### Dependencies
+
+* bump npm-user-validate from 1.0.0 to 1.0.1 ([#247](https://github.com/WormieCorp/conventional-changelog-wormiecorp/issues//247)) ([250c543](https://github.com/WormieCorp/conventional-changelog-wormiecorp/commit/250c543))
+
 ## [1.1.4](https://github.com/WormieCorp/conventional-changelog-wormiecorp/compare/v1.1.3...v1.1.4) (2021-01-05)
 
 
