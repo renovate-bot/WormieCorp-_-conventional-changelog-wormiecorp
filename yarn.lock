@@ -318,10 +318,10 @@
   resolved "https://registry.yarnpkg.com/@types/compare-func/-/compare-func-1.3.0.tgz#bacc36d171b0673b7341382c398efd1515ae4f79"
   integrity sha512-PPot9CrplfN5UyMCtWK90s2e/e8A8meP+7k8uszKQYN0RBPz7F/oNArMnWbNw90lGRst3W2sSn90R57Bjh3yDw==
 
-"@types/node@14.14.31", "@types/node@>= 8":
-  version "14.14.31"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.31.tgz#72286bd33d137aa0d152d47ec7c1762563d34055"
-  integrity sha512-vFHy/ezP5qI0rFgJ7aQnjDXwAMrG0KqqIH7tQG5PPv3BWBayOPIQNBjVc/P6hhdZfMx51REc6tfDNXHUio893g==
+"@types/node@14.14.33", "@types/node@>= 8":
+  version "14.14.33"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.33.tgz#9e4f8c64345522e4e8ce77b334a8aaa64e2b6c78"
+  integrity sha512-oJqcTrgPUF29oUP8AsUqbXGJNuPutsetaa9kTQAQce5Lx5dTYWV02ScBiT/k1BX/Z7pKeqedmvp39Wu4zR7N7g==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
