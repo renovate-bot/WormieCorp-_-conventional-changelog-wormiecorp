@@ -438,10 +438,10 @@
   resolved "https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
   integrity sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
 
-"@types/compare-func@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@types/compare-func/-/compare-func-1.3.0.tgz#bacc36d171b0673b7341382c398efd1515ae4f79"
-  integrity sha512-PPot9CrplfN5UyMCtWK90s2e/e8A8meP+7k8uszKQYN0RBPz7F/oNArMnWbNw90lGRst3W2sSn90R57Bjh3yDw==
+"@types/compare-func@1.3.3":
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/@types/compare-func/-/compare-func-1.3.3.tgz#c2e05ed7c2a3660ffcaa411e9b660cf4cc6b5bfb"
+  integrity sha512-0KAEbThRBChmTU1Y45VfKHxnk/ZMzWhEt+r2+Mvge5bwXD+EV94NFyzQdf8RUZX9HyMlltOxaCm1GWh2bb6SAw==
 
 "@types/node@14.14.37", "@types/node@>= 8":
   version "14.14.37"
